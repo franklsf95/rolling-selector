@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Frank's Random Rolling Selector</title>
+	<link rel="stylesheet" href="stylesheets/app.css">
+</head>
+<body>
+
+	<div class="row">
+		<header class="twelve columns">
+			<h2 class="subheader">Frank's Random Rolling Selector</h2>
+		</header>
+	</div>
+
+	<hr>
+
+	<div class="row" id="main">
+		<section class="nine columns" id="name-wrapper">
+			<h1 id="name">
+				Initialize first
+			</h1>
+		</section>
+		<form class="three columns" id="aside-wrapper">
+			<fieldset>
+				<legend>Namelist</legend>
+				<textarea id="namelist" rows="16"></textarea>
+			<input type="button" class="button" id="btn-init" value="Initialize">
+			</fieldset>
+		</form>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="twelve columns">
+			<h3>Control Panel</h3>
+			<div class="row">
+		    	<div class="two columns">
+		    		<input type="button" class="button success large" id="btn-toggle" value="Start" disabled>
+		    	</div>
+		    	<div class="two columns">
+		    		<label class="inline">Set Interval (ms):</label>
+		    	</div>
+		    	<div class="two columns">
+		    		<input type="text" id="interval" value="100"/>
+		    	</div>
+		    	<div class="three columns">
+		    		<input type="button" class="button radius small secondary" id="btn-toggle-aside" value="Toggle Namelist" disabled>
+		    	</div>
+		    	<div class="end"></div>
+			</div>
+	</div>
+
+    <div class="hint">
+        <p>Initialize first, then press 'space' to start and stop</p>
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
